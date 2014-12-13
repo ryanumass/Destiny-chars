@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+	<title>Recipes</title>
+	<!-- Run in full-screen mode. -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Make the status bar black with white text. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Customize home screen title. -->
+	<meta name="apple-mobile-web-app-title" content="Destiny Warlock App">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Icons -->
+
+	
+	
+		  
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/css/photoswipe.css">
+	
+	<script defer type="text/javascript" src="assets/js/klass.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jstorage.js"></script>
+	<script defer type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script defer src="assets/js/custom.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
+		<ul data-role="listview" data-inset="false" data-theme="b">
+			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
+			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li data-role="collapsible" data-inset="false" data-theme="b" data-content-theme="a" data-iconpos="right">
+				
+			</li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="news.html"><img src="assets/img/menu-icons/news.png" alt="News" class="ui-li-icon">News<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_warlock" class="countable"><a data-transition="slide" data-count="2" href="warlock.html"><img src="assets/img/menu-icons/star.png" alt="Warlock" class="ui-li-icon">Warlock<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_blog" class="countable"><a data-transition="slide" data-count="3" href="blog.html"><img src="assets/img/menu-icons/blog.png" alt="Blog" class="ui-li-icon">Blog<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="video.html"><img src="assets/img/menu-icons/video.png" alt="Video" class="ui-li-icon">Video<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
+			<li><a data-transition="slide" href="typography.html"><img src="assets/img/menu-icons/typography.png" alt="Typorgaphy" class="ui-li-icon">Typography</a></li>
+			<li><a data-transition="slide" href="form-elements.html"><img src="assets/img/menu-icons/typography.png" alt="Form Elements" class="ui-li-icon">Form Elements</a></li>
+		</ul>
+		<div style="position: relative; top: 15px;">
+			<p>Tell your friends you're a Warlock NERD</p>
+			<a href="#"><img src="assets/img/panel/skype.png" alt="Skype"></a>
+			<a href="#"><img src="assets/img/panel/twitter.png" alt="Twitter"></a>
+			<a href="#"><img src="assets/img/panel/vimeo.png" alt="Vimeo"></a>
+			<a href="#"><img src="assets/img/panel/facebook.png" alt="Facebook"></a>
+			<a href="#"><img src="assets/img/panel/google.png" alt="Google+"></a>
+			<a href="#"><img src="assets/img/panel/youtube.png" alt="YouTube"></a>
+		</div>
+	</div>
+	<div data-role="panel" data-theme="b" data-position="right" data-display="push" id="right_panel">
+		<div style="text-align: center;">
+			<h4 style="margin-top: 0px;">Share this page on:</h4>
+			<div class="panel-social-wrap">
+				<a class="facebook_share_link" title="Share link on Facebook" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-twitter accent-color">
+						<img src="assets/img/facebook.png" alt="Facebook">
+					</div>
+				</a>
+				<div class="panel-social-counter facebook_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="twitter_share_link" title="Share link on Twitter" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-facebook accent-color">
+						<img src="assets/img/twitter.png" alt="Twitter">
+					</div>
+				</a>
+				<div class="panel-social-counter twitter_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="google_share_link" title="Share link on Google+" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-google accent-color">
+						<img src="assets/img/google.png" alt="Google+">
+					</div>
+				</a>
+				<div class="panel-social-counter google_number"></div>
+			</div>
+		</div>
+	</div>
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<div class="header_wrapper">
+			<a style="border-left: none;" class="header_button" href="#left_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img class="header-btn-image" style="width: 100%; height: 100%;" src="assets/img/menu.png" alt="Menu">
+				<span class="menu-btn-background"></span>
+				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
+			</a>
+			<span class="page_title">Expand your light Guardian</span>
+			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
+				<span class="btn-background"></span>
+			</a>
+			<a style="float: right;" class="header_button" href="#right_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+				<span class="btn-background share-btn-background"></span>
+			</a>
+			<div style="clear: both"></div>
+		</div>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div class="container">
+			<article class="blog-article">
+				<div class="blog-featured-image blog-image-center text-transparent">
+					<div style="display: inline-block; max-width: 100%; position: relative;">
+						<a href="blog-single-5.html">
+							<img src="assets/img/content-images/warlock3.jpg" alt="lock2">
+						</a>
+						<div class="blog-single-title">
+							<section class="blog-single-title-text">
+								<a href="blog-single-5.html">
+									<p class="title">WARLOCK class</p>
+								</a>
+								<p class="excerpt">The warlock class is a very independent and versatile class.  The greatest reason for this is the SunSinger specification.  One of the last unlocks grant you the "Fireborn" ability, that gives you the ability to come back from death all on your own.  Their two damage tiers are Solar and Void so keep that in mind when it comes to weekly challenges.  </p>
+							</section>
+						</div>
+					</div>
+				</div>
+				<hr style="background: #bebebe; margin: 30px 0;">
+			</article>
+			<div style="margin-bottom: 30px;" class="advertisement-468-60">
+				<img src="assets/img/adv-468-60.jpg" alt="Advertisement">
+			</div>
+			<hr style="background: #bebebe; margin: 30px 0;">
+			
+						
+							<article class="blog-article blog-article-border">
+				<div class="blog-featured-image blog-image-right">
+					<div style="display: inline-block; max-width: 100%;">
+						
+							<img src="assets/img/content-images/Sunsinger.jpg" alt="Sunsinger">
+						
+					</div>
+				</div>
+				<a href="blog-single-4.html">
+					<h3 class="blog-article-title">Class Recommendation</h3>
+				
+				<p class="excerpt" style="color: #404040;">	From Level 1 you start off putting points into Void.  I would immediately switch that to SunSinger so that you upgrade that as fast as possible, having a fire-born revive makes you just about the most marketable type of Guardian in the game so getting groups will be very easy, whereas if you put your points into Void you'll have high damage output but that can be easily matched or exceeded with the other classes.</p>
+				<div class="clear"></div>
+			</article>
+			<hr style="background: #bebebe; margin: 30px 0;">
+			<div style="text-align: center;">
+				<a href="hunter.html" data-corners="false" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" data-inline="true">Hunter</a>
+				<a href="titan.html"  data-corners="false" data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right" data-inline="true">Titan</a>
+			</div>
+		</div>
+				<div>
+					<h6 class="footer-text"> <a HREF="assets/img/Danteicon.jpg"><IMG SRC="assets/img/Danteicon.jpg" border=0 align=center></a></h6>
+				</div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+		<script type="text/javascript" src="assets/js/retina.min.js"></script>
+	</body>
+</html>
