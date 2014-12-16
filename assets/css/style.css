@@ -9,6 +9,7 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 14px;
 }
+
 img {
 	height: auto;
 }
@@ -193,6 +194,11 @@ body a:visited  {
 #home .ui-content, .single-blog-slider .ui-content {
 	padding: 0px;
 }
+#wrapper {
+            height: 100%;
+            width: 200px;
+            overflow: auto;
+}			
 .page-tagline {
 	text-align: center;
 }
@@ -208,10 +214,13 @@ body a:visited  {
 	overflow: hidden;
 	max-height: 138px;
 }
+
 .blog-article-border .blog-article-title,  .blog-article-border .excerpt{
 	max-height: 90px;
 	overflow: hidden;
 	padding-left: 15px;
+	
+}
 }
 .blog-article-border a {
 	color: #404040!important;
